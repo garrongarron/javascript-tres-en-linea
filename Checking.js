@@ -21,7 +21,7 @@ let checking = (tipo, tablero) => {
         }
     }
     //Vertical
-    for (let index = 16; index < tablero.children.length - 16; index++) {
+    for (let index = 0; index < tablero.children.length - 16; index++) {
         let case2 = [
             tablero.children[index].classList.contains(tipo),
             tablero.children[index + 8].classList.contains(tipo),
